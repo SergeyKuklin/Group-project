@@ -33,6 +33,7 @@ li {
 
 .top-menu__left a {
     text-decoration: none;
+    color: black;
 }
 
 .top-menu__right {
@@ -68,16 +69,30 @@ li {
     content: '';
     position: absolute;
     top: 0;
-    left: -100%;
+    left: 100%;
     opacity: 0;
     width: 100%;
-    height: 85%;
     border-top: 2px solid #83C2D5;
-    border-bottom: 2px solid #83C2D5;
     transition: all 0.5s;
 }
 
+.menu-left__item::before {
+    content: '';
+    position: absolute;
+    top: 85%;
+    left: -100%;
+    opacity: 0;
+    width: 100%;
+    border-bottom: 2px solid #83C2D5;
+    transition: all 0.2s;
+}
+
 .menu-left__item:hover::after {
+    opacity: 1;
+    left: 0;
+}
+
+.menu-left__item:hover::before {
     opacity: 1;
     left: 0;
 }
@@ -124,19 +139,20 @@ li {
 .telegram:hover .icon,
 .telegram:hover .icon::before,
 .tooltip-telegram:hover {
-    background-color: #32AADF;
+    background-color: #83C2D5;
 }
 
 .youtube:hover .icon,
 .youtube:hover .icon::before,
 .tooltip-youtube:hover {
-    background-color: #FF0000;
+    background-color: #D6AA45
+    ;
 }
 
 .instagram:hover .icon,
 .instagram:hover .icon::before,
 .tooltip-instagram:hover {
-    background-color: #DD4382;
+    background-color: #5FA1A6;
 }
 
 /* === */
