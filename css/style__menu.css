@@ -184,14 +184,16 @@ li {
     height: 100%;
 }
 
-.footer__item a {
+.nav-page a,
+.nav-contact a {
     text-decoration: none;
     text-decoration: none;
     color: black;
     transition: all 0.3s;
 }
 
-.footer__item a:hover {
+.nav-page a:hover,
+.nav-contact a:hover {
     color: #D6AA45;
 }
 
